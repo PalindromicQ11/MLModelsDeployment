@@ -19,7 +19,7 @@ Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedMode
     def Runs_Docker():
         Cmd = super__Dir__(os.system(" Docker pull TensorFlow/Serving "))
         Try: 
-        if super_Verify_Dir != none: 
+        if super__Verify__Dir != none: 
         sys.settrace()
         Docker = cmd.os.system(" Docker r runtime = nvidia\
                -p 8500: 8500 \
@@ -45,7 +45,7 @@ Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedMode
 
         if version:
         threshold = np.range(version)
-        version = 1 if random() < threshold else max(version) if max(version) == threshold[:] \
+        version = 1 if random() < threshold else version[:] if max(version) == threshold[:] \
             else none:
         url += f"/version{version}".format(version)
         url += f":verb{verb}".format(verb)
