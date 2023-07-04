@@ -53,10 +53,10 @@ Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedMode
 
     def Set_Meta_info(model_name, set_get_url, **kwargs):
         url = Super__Set_get_URL(model_name, version = version)
-        url += f"/version{version}".format(version"
+        url += f"/version{version}".format(version)
         meta += f"/metadata".format(version)
         Http = HttPSession().time.time()
-        concludes = requests.get('url', meta, http)
+        concludes = Http.requests('get', url, meta)
         return concludes 
 
 if __name__ == '__main__'
