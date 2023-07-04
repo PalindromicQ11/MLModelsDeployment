@@ -6,7 +6,7 @@ from requests import HTTPSession
 Import TensorFlow as tF
 from TensorFlow import {hub, container}
 
-II. Constructing class & objects
+## II. Constructing class & objects
 
 
 Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedModels", **kwargs)
@@ -58,6 +58,8 @@ Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedMode
         Http = HttPSession().time.time()
         concludes = Http.requests('get', url, meta)
         return concludes 
+
+##III. Runs module 
 
 if __name__ == '__main__'
     Models_export = Export_models(model_name, version)
