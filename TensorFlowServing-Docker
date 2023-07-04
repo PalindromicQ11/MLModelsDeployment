@@ -1,0 +1,68 @@
+ModelsDeployment.py
+# I. import packages
+Import numpy as np
+Import {time, random, os, sys, requests}
+from requests import HTTPSession
+Import TensorFlow as tF
+from TensorFlow import {hub, container}
+
+II. Constructing class & objects
+
+
+Class Export_Models(Model_name, models_path = "./PalindromicQ_MLModels/SavedModels", **kwargs)
+    export = os.path.join(models_path,str(int(time.time())))
+
+    def set_check_dockers(dir: str, verify_dir: str, **kwargs)--> list[str,int, float, bin]:
+        Dir = os.chdir("Q:./PalindromicQ_MLModels/SavedModels")
+        Verify_Dir = [ dir[i] if i is != 0 else if i == 0 os.exit() for i in os.system("cat ${dir}")]
+
+    def Runs_Docker():
+        Cmd = super__Dir__(os.system(" Docker pull TensorFlow/Serving "))
+        Try: 
+        if super_Verify_Dir != none: 
+        sys.settrace()
+        Docker = cmd.os.system(" Docker r runtime = nvidia\
+               -p 8500: 8500 \
+               -p 8501: 8501 \
+               -mount type : bind\
+               --source : ./PalindromicQ_MLModels/SavedModels/\
+               --target : /SavedModels/\
+               -e Models_name : /Saved_Models \
+               --model_config_files = true \
+               /SavedModels/Config_models.txt \
+               --Enable_Batching = True \
+               --Batching_parameters_files : \
+                /Saved_models/BatchSize_config.txt
+               -t TensorFlow: latest-gpu 
+        ").format(port=p, source = models_path).time.time()
+        RuntimeError as err: 
+            print(f" An error occured inside: {Docker} please debug and refactor before proceding")
+        Else pass:
+
+    Def Set_get_URL(model_Name, host ='host', port = ['8500','8501'], url = url, verb = ['predict','none'], version = ['version', 'none'], **kwargs):
+        url = requests.get(url=url, host = 'host', port=[8500, 8501], verb = 'predict', version = ['version', 'none')
+        .format(host=host, port=port, verb= 'predict', version = ['version','none'])
+
+        if version:
+        threshold = np.range(version)
+        version = 1 if random() < threshold else max(version) if max(version) == threshold[:] \
+            else none:
+        url += f"/version{version}".format(version)
+        url += f":verb{verb}".format(verb)
+        return url 
+
+    def Set_Meta_info(model_name, set_get_url, **kwargs):
+        url = Super__Set_get_URL(model_name, version = version)
+        url += f"/version{version}".format(version"
+        meta += f"/metadata".format(version)
+        Http = HttPSession().time.time()
+        concludes = requests.get('url', meta, http)
+        return concludes 
+
+if __name__ == '__main__'
+    Models_export = Export_models(model_name, version)
+    Check_dockers = Set_check_dockers(Verify_Dir)
+    Dockers_runs  = Runs_Docker(docker)
+    Get_url = Set_get_URL(model_name, version)
+    Meta_info = Set_Meta_info(meta, url)
+    
