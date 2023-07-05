@@ -1,0 +1,21 @@
+<html !doctype> 
+<head>
+    <h1 align="center" font-style="monotyp-corsiva" font-size=36px font-color=navy> 
+    PalindromicQ MachineLearning Models Deployment  </h1>
+</head>
+    
+<script lan = 'python'> </script>
+    <script scr='./PalindromicQ/Scripts'>
+        # scripts
+    </script>
+<body>
+    <div align="right" ></div> 
+        <div id="button" onclick='Start Stream'>
+            
+        </div>
+        <video autoplay=video id='QS'>
+            
+        </video>
+    
+</body>
+</html>       
