@@ -19,7 +19,7 @@ Codespaces Topography:
   *main.py
 
 #create virtual environment 
-  # python3 -m venv  
+  # python3 -m venv ~/.venv
   # edit ~.bashrc
     vim ~.bashrc 
     shift + G (end page) to source venv:
